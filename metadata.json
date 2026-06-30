@@ -1,0 +1,6 @@
+{
+  "name": "Visual Discovery Board",
+  "description": "An interactive, elegant visual discovery and curation board inspired by Pinterest, featuring rich collections, detailed pin views with comments, real-time saving, and creative discovery tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Italiana", "Cinzel", "Georgia", serif;
+  --font-serif: "Italiana", "Cinzel", "Georgia", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-red: #C5A059;
+  --color-brand-red-hover: #D4B273;
+  --color-brand-gray: #1E1E1E;
+  --color-brand-dark: #F4F4F4;
+  --color-brand-bg: #0A0A0A;
+  --color-secondary: #A3A3A3;
+}
+
+@utility hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility active-scale {
+  &:active {
+    transform: scale(0.96);
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-dark);
+}
+
+.masonry-grid {
+  column-count: 2;
+  column-gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .masonry-grid {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry-grid {
+    column-count: 4;
+  }
+}
+
+@media (min-width: 1280px) {
+  .masonry-grid {
+    column-count: 5;
+  }
+}
+
+.pin-card {
+  break-inside: avoid;
+  margin-bottom: 16px;
+}
